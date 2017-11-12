@@ -26,3 +26,14 @@ Bash Equivalent:
 ```
 seq 1000 | factor | grep ' [57] ' | cut -d":" -f1
 ```
+
+### BC Math
+Takes an argument, n, and adds the first n numbers
+```
+R'$0'T'\n'':'Se's/:/+/g'e's/+/\n/$0'M
+```
+
+Bash Equivalent:
+```
+seq "$0" | tr '\n' ':' | sed -e 's/:/+/g' -e "s/+/\n/$0" | bc -l
+```

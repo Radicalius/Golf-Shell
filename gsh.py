@@ -8,7 +8,7 @@ else:
 	repl = True
 
 # command substitutions
-subs = {"E":"echo","T":"tr","L":"ls","C":"cut","O":"sort","K":"cat","G":"grep","Q":"exit","B":"tail","H":"Head","R":"seq","F":"factor","S":"sed -n","W":"wc"}
+subs = {"E":"echo","T":"tr","L":"ls","C":"cut","O":"sort","K":"cat","G":"grep","Q":"exit","B":"tail","H":"head","R":"seq","F":"factor","S":"sed","W":"wc","M":"bc -l"}
 
 def parse(cont):
 	quoted = False

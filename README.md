@@ -6,6 +6,16 @@
 E'Hello World!
 ```
 
+### Count Files
+```
+LlWl
+```
+
+Bash Equivalent:
+```
+ls -l | wc -l
+```
+
 ### Reverse String
 Takes an argument and prints it out in reverse order
 ```
@@ -37,3 +47,13 @@ Bash Equivalent:
 ```
 seq "$0" | tr '\n' ':' | sed -e 's/:/+/g' -e "s/+/\n/$0" | bc -l
 ```
+
+### 2 + 2 = 5
+Takes a mathmatical expression and if it is 2+2 outputs 5; otherwise outputs the correct answer
+```
+?[$0==2+2];E'5':E"$1"M;
+```
+Bash:
+```
+if [[ "$0" == "2+2" ]] ; then echo '2'; else echo "2+2" | bc -l; fi
+``` 
